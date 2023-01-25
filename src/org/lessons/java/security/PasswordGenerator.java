@@ -19,21 +19,20 @@ public class PasswordGenerator {
 		String color;
 		int year;
 
-		Scanner inputName = new Scanner(System.in);
+		Scanner s = new Scanner(System.in);
 		System.out.println("Insert your name: ");
-		name = inputName.nextLine();
+		name = s.nextLine();
 
-		Scanner inputSurname = new Scanner(System.in);
 		System.out.println("Insert your surname: ");
-		surname = inputSurname.nextLine();
+		surname = s.nextLine();
 
-		Scanner inputColor = new Scanner(System.in);
 		System.out.println("Insert your favourite color: ");
-		color = inputColor.nextLine();
+		color = s.nextLine();
 
-		Scanner inputYear = new Scanner(System.in);
 		System.out.println("Insert your year of birth: ");
-		year = inputYear.nextInt();
+		year = s.nextInt();
+
+		s.close();
 
 		System.out.println("Your password is: " + name + "-" + surname + "-" + color + "-" + year);
 	}
